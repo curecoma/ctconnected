@@ -37,6 +37,17 @@ hr {
     background-color: gray;
 }
 
+.updates>hr {
+    max-width: 90%;
+}
+
+li>hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-color: rgba(128, 128, 128, 0);
+}
+
 .float {
     float: right;
 }

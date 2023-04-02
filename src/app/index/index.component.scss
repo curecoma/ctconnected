@@ -21,9 +21,12 @@ h3 {
 
 .Updates {
     grid-area: main;
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 8px;
+    max-height: 300px;
     overflow: auto;
 }
 
@@ -45,10 +48,10 @@ h3 {
 
 .container {
     position: relative;
-    margin: auto;
     margin-top: 82px;
     size: 100%;
     display: grid;
+    max-height: 1020px;
     grid-template-rows: auto auto 60px;
     grid-template-columns: minmax(600px, 1000px) 300px;
     column-gap: 1vh;
@@ -56,6 +59,12 @@ h3 {
     grid-template-areas: "header sidebar" "main sidebar" "footer sidebar";
     color: bisque;
     justify-content: center;
+}
+
+@media (min-width: 1100px) {
+    body {
+        overflow-y: hidden;
+    }
 }
 
 .Introduction>img {

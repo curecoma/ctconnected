@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,8 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
+  loading: boolean = true;
+
+  ngOnInit() {
+    this.loading = false;
+  }
+
   ngAfterViewInit(): void {
     (<any>window).twttr.widgets.load();
+  }
+  constructor(private http: HttpClient) {
+    this.http.get('/assets/JSON/updates.json').subscribe((data: any) => {
+      for (const update of data[0].updates) {
+        let text = '';
+        text += '<li><h4 style="margin-top: 5px;margin-bottom: 5px;">' + update.date + '</h4>';
+        text += update.content + '<hr></li>';
+        document.getElementById('UpdateContents')!.innerHTML += text;
+      }
+    });
   }
 }
 

@@ -9,10 +9,6 @@
     grid-template-columns: minmax(600px, 1000px);
 }
 
-body {
-    overflow: hidden;
-}
-
 h3 {
     text-align: center;
 }

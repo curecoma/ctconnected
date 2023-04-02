@@ -1,3 +1,7 @@
 <app-rain></app-rain>
 <app-navbar></app-navbar>
-<router-outlet></router-outlet>
+
+<!--loader-->
+<app-loading-screen class="loading" *ngIf="loader"></app-loading-screen>
+<!--page-->
+<router-outlet *ngIf="!loader"></router-outlet>

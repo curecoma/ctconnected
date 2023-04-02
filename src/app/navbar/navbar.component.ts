@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  isComponentLoaded = false;
 
+  switchToNewComponent() {
+    // Trigger the switch to the new component
+    this.isComponentLoaded = false;
+  }
 }

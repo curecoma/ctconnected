@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'pic', component: PicComponent },
   { path: 'tool', component: ToolComponent },
   { path: 'link', component: LinkComponent },
+  { path: '**', component: IndexComponent }
 ];
 
 @NgModule({
