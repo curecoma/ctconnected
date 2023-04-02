@@ -1,0 +1,75 @@
+/* images.css */
+
+.right {
+    text-align: right;
+}
+
+
+/* TopGrid.css */
+
+h3 {
+    text-align: center;
+}
+
+.Introduction {
+    grid-area: header;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.Updates {
+    grid-area: main;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 8px;
+    overflow: auto;
+}
+
+.Twitter {
+    grid-area: sidebar;
+    margin: 8px;
+    margin-left: 0;
+    max-height: 30%;
+}
+
+.Copyright {
+    grid-area: footer;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    margin-top: 82px;
+    size: 100%;
+    display: grid;
+    grid-template-rows: auto auto 60px;
+    grid-template-columns: minmax(600px, 1000px) 300px;
+    column-gap: 1vh;
+    row-gap: 1vh;
+    grid-template-areas: "header sidebar" "main sidebar" "footer sidebar";
+    color: bisque;
+    justify-content: center;
+}
+
+.Introduction>img {
+    margin: 6px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+
+
+/* UpdateList.css */
+
+li>hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-color: rgba(128, 128, 128, 0);
+}
