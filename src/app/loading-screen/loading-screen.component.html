@@ -1,4 +1,4 @@
-<main>
+<main *ngIf="this.loader.getLoading()" [@fadeOut] class="cssload-container">
     <div class="dank-ass-loader">
         <div class="row">
             <div class="arrow up outer outer-18"></div>

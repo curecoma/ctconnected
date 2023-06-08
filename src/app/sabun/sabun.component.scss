@@ -1,0 +1,17 @@
+.tableflame {
+    --header-height: 82px;
+    margin-top: 82px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height: calc(100% - var(--header-height));
+}
+
+#table_int {
+    border-spacing: 1px;
+    border-collapse: separate;
+    padding: 2px;
+    background-color: #002b19;
+    color: bisque;
+}

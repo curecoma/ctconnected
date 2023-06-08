@@ -1,3 +1,26 @@
+:root {
+    --default-padding: 10px;
+    --shimmy-distance: 5;
+    --primary-hue: 0;
+    --primary-lightness: 50;
+    --color: #fff;
+    --black: #0d0d0d;
+    --font-size: 26px;
+    --label-size: 9px;
+    --shadow-primary-hue: 180;
+    --shadow-secondary-hue: 60;
+    /* Parameters */
+    --color-first: #FF00FF;
+    --color-second: #00FFFF;
+    --color-third: #FFFF00;
+    --color-forth: #000000;
+    --block-width: 256px;
+    --block-height: 256px;
+    --border-width: 8px;
+    box-sizing: border-box;
+}
+
+
 /*
 Rain.css
 original: https://codepen.io/arickle/pen/XKjMZY
@@ -82,6 +105,7 @@ body {
     background-repeat: repeat;
     background-position: 0% 35%;
     font-family: 'Zen Antique', serif;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -164,6 +188,7 @@ a:active {
 /* Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar {
+    height: 6px;
     width: 6px;
 }
 

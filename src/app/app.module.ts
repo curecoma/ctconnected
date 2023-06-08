@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,11 +16,16 @@ import { PicComponent } from './pic/pic.component';
 import { ToolComponent } from './tool/tool.component';
 import { LinkComponent } from './link/link.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { LoadingInterceptor } from './loading.interceptor';
+import { ModalComponent } from './modal/modal.component';
+import { SabunComponent } from './sabun/sabun.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    LoadingScreenComponent,
     RainComponent,
     IndexComponent,
     BmsComponent,
@@ -25,14 +33,22 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
     PicComponent,
     ToolComponent,
     LinkComponent,
-    LoadingScreenComponent
+    ModalComponent,
+    SabunComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgbModule,
+    NgbModalModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 

@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
-  loading: boolean = true;
-
-  ngOnInit() {
-    this.loading = false;
-  }
-
   ngAfterViewInit(): void {
     (<any>window).twttr.widgets.load();
   }

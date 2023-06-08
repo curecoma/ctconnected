@@ -1,1 +1,503 @@
-<p>bms works!</p>
+<h1>
+    暮狛BMS置き場</h1>
+<div class="center">
+    <ul>
+        <li style="list-style-type: none;">
+            <div class="item">
+                <img class="dl" style="border: 4px solid rgb(100, 194, 113);" src="/assets/Jackets/99.png">
+                <div class="dllinks" style="border: 4px solid rgb(100, 194, 113);">
+                    <table id="BMSList">
+
+                    </table>
+                </div>
+            </div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(0, 0, 0);" src="/assets/Jackets/9.png" (click)="openModal('modal9')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item">
+                <div class="c-quadrupolar-box">
+                    <div class="rainbow"><span></span><span></span></div>
+                    <div class="c-quadrupolar-box__wrapper"> <img src="/assets/Jackets/8.png" (click)="openModal('modal8')" />
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(192, 225, 124);" src="/assets/Jackets/7.png" (click)="openModal('modal7')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(56, 4, 14);" src="/assets/Jackets/6.png" (click)="openModal('modal6')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(255, 255, 255);" src="/assets/Jackets/5.png" (click)="openModal('modal5')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(231, 29, 54);" src="/assets/Jackets/4.png" (click)="openModal('modal4')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(72, 202, 228);" src="/assets/Jackets/3.png" (click)="openModal('modal3')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(199, 172, 146);" src="/assets/Jackets/2.png" (click)="openModal('modal2')"></div>
+        </li>
+        <li style="list-style-type: none;">
+            <div class="item"><img class="jacket" style="border: 4px solid rgb(82, 10, 0);" src="/assets/Jackets/1.png" (click)="openModal('modal1')"></div>
+        </li>
+    </ul>
+</div>
+
+<!-- Modal 1 -->
+<jw-modal id="modal1">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                量産型八咫烏
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal1');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>量産型八咫烏
+            </h1>
+            <button class="cybr-btn" style="--primary-hue: 0; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(82, 10, 0);" src="/assets/Jackets/1.png">
+            <p>
+                処女作/全押し。
+            </p>
+            <p>
+                自分の一番好きな東方キャラクターが当時から今も変わらず霊烏路空なわけですが、当時は彼女のテーマソングである霊地の太陽信仰のアレンジBMSがKurenaさんのglorious red - 赫月、黒陽ヲ穿ツ -しかありませんでした。
+            </p>
+            <p>
+                その楽曲も他の曲とのマッシュアップアレンジであり純粋なアレンジは存在しなかったのでじゃあ俺が作るか！と。
+            </p>
+            <p>
+                現代ではYonder VoiceさんのBlack or WhiteやLeaFさんのArmageddonなど高クオリティのアレンジも増えてきて喜ばしい限りです。
+            </p>
+            <p>
+                ただし当時は今ですら多いとはとても言えない音楽的知識も皆無でございまして、やれることと言ったらインターネットに存在するMidiを元にどうにかこねくり回して音ゲーライクにすることぐらいでした。
+            </p>
+            <p>
+                音楽の調というものの存在すら知らなかったのでコピペじゃない音がリズム隊と101小節のラスト4音だけという始末、その4音もスケールから外れ続けていたのでしっくりくるように調整するのにえらく時間がかかった記憶があります。
+            </p>
+            <p>
+                そして音切りやらBMS化やらも苦労してウッキウキで譜面作ってようやく公開となったのですが、音量が小さいわインダストリアルを名乗ってるくせにインダストリアルな音皆無だわと凡ミスのオンパレード。 今となってはいい思い出です。
+            </p>
+            <p>
+                一方譜面の方はとっくに作り慣れていたので好き放題やりました。難易度とノーツ数が反比例したりDP黒穴が暴れ倒していたりと全体的に意欲的なのですが、 とくにSPNとDPNが地元では大人気でコントローラーが壊れると評判だったり自称☆1なのにAIには★21と判断されたりと話題が尽きません。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2016/07/11
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 2 -->
+<jw-modal id="modal2">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                Tb Plausible
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal2');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>Tb Plausible
+            </h1>
+            <button class="cybr-btn" style="--primary-hue: 45; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(199, 172, 146);" src="/assets/Jackets/2.png">
+            <p>
+                素朴/徐々に。
+            </p>
+            <p>
+                いきなり前作から一年半ほど飛んでいることからわかる通り自分はかなり寡作寄りの人間で、今でも気が向かないと行動できない悪癖は全く直っておりません。
+            </p>
+            <p>
+                タイトルの方ですがTbはToy box=おもちゃ箱の頭文字で作っている最中はおもちゃ箱をひっくり返したようなイメージを持ってました。
+            </p>
+            <p>
+                トイボックスをイニシャルにしてるのもPlausible(「もしかして」や「の可能性がある」的な意味を持つ単語です)という単語がついているのもイメージが共有できなかった場合用の逃げです、弱い。
+            </p>
+            <p>
+                当時Splatoonにハマっておりまして、その中でも口琴を使用して様々な楽曲を次々サンプリングするような構成をしていたTentacular Circusという曲が大のお気に入りだったので自分でも口琴をメインとした楽曲を作ってやろうかとなった次第でした。
+            </p>
+            <p>
+                イントロの徐々に8分からハネリズムに移行するリズムや中盤の加速ソフランなど徐々に変化することに対する好き好みは、この当時から今も全く変わってないですね。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2018/03/01
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 3 -->
+<jw-modal id="modal3">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                敵性夕立/鏡面海域
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal3');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>敵性夕立/鏡面海域
+            </h1>
+            <button class="cybr-btn" style="--primary-hue: 225; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(72, 202, 228);" src="/assets/Jackets/3.png">
+            <p>
+                復唱/鏡面。
+            </p>
+            <p>
+                第2回ソフラン差分企画参加作品。
+            </p>
+            <p>
+                遥か昔にあったおにぎり差分企画という企画にてΩμεγαさんという方が差分企画にもかかわらず曲をぶん投げたことがありまして、それと似たようなことをしてみたいと長きにわたって思っていたのですがちょうど都合のいい差分イベントがあるじゃないですかということで参加。
+            </p>
+            <p>
+                同梱はわずか2譜面ですが各難易度で別のギミックを利用したいなぁって考えたことによる影響なので赦していただきたい。
+            </p>
+            <p>
+                小節線を利用したわかりやすい復唱譜面と4鍵の地雷を鏡に見立てたギミックの2種類を同梱して、とくに後者はBMSだと前例がなかったので結構自信あったんですけど同イベントで類似コンセプトの作品があってちょっと凹んでたりしました。
+            </p>
+            <p>
+                楽曲の方に関しては初々しさあふれる普通の音ゲーコアです、あとアズールレーンのBGMのアレンジだったりもするのですが今日にいたるまでアズレンアレンジBMSはこれ一作だったはずな気がします。
+            </p>
+            <p>
+                誰か赤城のキャラソンリミックスしてくれないかなぁと今日も一人で思ってます。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2018/03/01
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 4 -->
+<jw-modal id="modal4">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                【Freak《Show】Down》
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal4');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>【Freak《Show】Down》</h1>
+            <button class="cybr-btn" style="--primary-hue: 0; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(231, 29, 54);" src="/assets/Jackets/4.png">
+            <p>
+                乱痴気騒ぎ。
+            </p>
+            <p>
+                G2R2018参加作品。当時運営していた癖譜面これくしょんをテーマに大量の譜面作者とともに乗り込ませていただきました。初めての評価制イベント参加楽曲でもあります。
+            </p>
+            <p>
+                同梱譜面だけでも自分、kaguyaさん、kju8さん、NASAさん、paraphさん、京都306さん、Lapisさん、C4さん、altさん、翠廻さん、ratさん、Beats Per Master(reka)さん、KEHさんの13人体制という大所帯。皆様ありがとうございました。
+            </p>
+            <p>
+                イントロの声は敵性夕立に引き続き大学時代のルームメイト、アカペラでバスを担当してただけあって良く響きます。
+            </p>
+            <p>
+                BGAのくわぎうさんにもお世話になりました、自分では1年かけても作れそうにない3Dでガンガン動くBGAを見せていただいたときは感動で固まりました。くわぎう名義での活動はもうされてないのですがお元気なことを祈ってます。
+            </p>
+            <p>
+                楽曲の解説はReadMeで空読無さんがして下さってるので軽く触れる程度にするのですが、個人的なお気に入りパートは中盤の和音が徐々に階段になる部分とリズムが全部違うトリルが降ってくるパートですね。
+            </p>
+            <p>
+                自作譜面でも派手な地雷ギミック以外ではそこが主役になるような譜面構成をしています。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2018/11/02
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 5 -->
+<jw-modal id="modal5">
+    <div class="noise">
+        <div class="window" tabindex="0">
+            <div class="window__title-bar">
+                <div class="window__title">
+                    My Most Meddling Maker
+                </div><br>
+                <button class="window__btn" (click)="closeModal('modal5');">
+              &times;
+              <span>Close</span>
+            </button>
+            </div>
+
+            <div class="window__body">
+                <div class="hero-container">
+                    <h1 class="hero glitch layers" data-text="My Most Meddling Maker"><span>My Most Meddling Maker</span></h1>
+                </div>
+                <button class="cybr-btn" style="--primary-hue: 30; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+                <img class="jacket" style="border: 4px solid rgb(245,245,245);" src="/assets/Jackets/5.png">
+                <p>
+                    運命/過干渉。
+                </p>
+                <p>
+                    無名戦16参加作。自作BMSで一つだけ選ぶならこれ。
+                </p>
+                <p>
+                    LR2でしか正しく動作しないため、今後本来想定された動作で遊ばれる事は減っていくであろう作品。
+                </p>
+                <p>
+                    愛やらエゴやら信仰やらを全部ごちゃ混ぜにかき混ぜて拙い表現力で最大限に表現しました。
+                </p>
+                <p>
+                    願わくばせめて忘れられないように。
+                </p>
+            </div>
+
+            <div class="window__status-bar">
+                公開：2019/06/06
+            </div>
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 6 -->
+<jw-modal id="modal6">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                化科竜編楽
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal6');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>化科竜編楽</h1>
+            <button class="cybr-btn" style="--primary-hue: 0; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(56, 4, 14);" src="/assets/Jackets/6.png">
+            <p>
+                突貫工事。
+            </p>
+            <p>
+                Alex Turell氏のDragon Etude Remix Contestに参加して見事二位(二曲中)に輝いた楽曲のBMS化。
+            </p>
+            <p>
+                コンテストに参加すると宣言したものの着手したのが締め切り間近だったため、楽曲の制作にかかった時間が二日と間違いなく自己最短記録。
+            </p>
+            <p>
+                突貫工事のためにいい感じのサンプルとかを多用しており、結果自作曲の中ではかなり聞きやすい側の楽曲になってしまっています、敗北感。
+            </p>
+            <p>
+                前作で燃え尽きた後のリハビリ的な側面も持っています。
+            </p>
+            <p>
+                なぜか譜面の方はとんでもなく難しく現状自作BMSに同梱した自作譜面で最難関だったりします。恐らくst7ぐらい？
+            </p>
+            <p>
+                最上位譜面以外も恐ろしい速度で連打が降ってくるためかなり難しく、穴譜面をハードできていない唯一の自作BMSだったりします。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2020/04/14
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 7 -->
+<jw-modal id="modal7">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                Introverts from Outerspace
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal7');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>Introverts from Outerspace</h1>
+            <button class="cybr-btn" style="--primary-hue: 75; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(192, 225, 124);" src="/assets/Jackets/7.png">
+            <p>
+                仮装/パロディ。
+            </p>
+            <p>
+                WORLD WAR -BATTLE ROYALE IN ALL REGIONS-参加作品。
+            </p>
+            <p>
+                謎解き要素を含んだイベントだったので英語でエリア51なのでアメリカという部分を軸にしつつ、宇宙関係の楽曲のパロディをこれでもかと詰め込んで推理の錯乱を狙った楽曲。
+            </p>
+            <p>
+                結果的に推理側に結構本気で参加していたので上記の偽装はほとんど意味がありませんでした。
+            </p>
+            <p>
+                また自作のBMSで唯一自分の声が入っている作品なのでコイツどんな声なんだと気になった場合はぜひ遊んでやってください、自分は自分の声を聴くのが嫌で自作のBMSで一番遊ぶ頻度が低いです。
+            </p>
+            <p>
+                BGAの作業量はMMMMに並ぶか上回るレベルで気合が入っています、画力に自信は全くないのですが何とか形にしました、現代だったら絶対AI使ってます。
+            </p>
+            <p>
+                あとこれは完全に個人的な愚痴なんですけどルゼさんは謎ときを作るのが本当にド下手なのでKA-KUさん辺りに外部委託した方がいい。TM2もTM3もWWも謎解きの質が本当にダメ。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2020/08/19
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 8 -->
+<jw-modal id="modal8">
+    <div class="window" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                Quadrupolar
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal8');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>Quadrupolar</h1>
+            <button class="cybr-btn colorless" style="--primary-hue: 0; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <div class="item">
+                <div class="c-quadrupolar-boxb">
+                    <div class="rainbow"><span></span><span></span></div>
+                    <div class="c-quadrupolar-boxb__wrapper"> <img src="/assets/Jackets/8.png" (click)="openModal('modal8')" />
+                    </div>
+                </div>
+            </div>
+            <p>
+                離散/集合。
+            </p>
+            <p>
+                BOFXVI参加作品、G2R2018に引き続き癖譜面コレクションチームからの参加となりました。
+            </p>
+            <p>
+                こちらも前回に引き続き様々な譜面作者さんの譜面を同梱しています。なんとなぜかリミックスまで同梱、sunaさんの仕事の速さには恐れ入ります。
+            </p>
+            <p>
+                数学的に変なことをやっているBMS、詳細はリードミーが詳しいのでそちら参照。分解能を無限に細かくできるBMSというフォーマットに助けられている。
+            </p>
+            <p>
+                自分がギミック譜面を作るときに心がけているのが初見でも対応できるということなのですが、個人的には曲全体でそれを一番うまくできたBMSだと思っています。
+            </p>
+            <p>
+                BGAは空読無さんに手伝っていただきました、BOFはプレイされるために目立たないといけないのでBGAのクオリティを上げる重要性が高く大助かりでした。改めてありがとうございます。
+            </p>
+            <p>
+                混沌としているリズムや構成と比較してコード進行やメロディの方は非常にシンプルだったりします。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2020/11/02
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 9 -->
+<jw-modal id="modal9">
+    <div class="window colorless" tabindex="0">
+        <div class="window__title-bar">
+            <div class="window__title">
+                creeping tone clusters
+            </div><br>
+            <button class="window__btn" (click)="closeModal('modal9');">
+              &times;
+              <span>Close</span>
+            </button>
+        </div>
+
+        <div class="window__body">
+            <h1>creeping tone clusters</h1>
+            <button class="cybr-btn" style="--primary-hue: 0; --primary-shadow-hue: 180; --secondary-shadow-hue: 60;">
+                <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+                <span class="cybr-btn__glitch"></span>
+            </button>
+            <img class="jacket" style="border: 4px solid rgb(0, 0, 0);" src="/assets/Jackets/9.png">
+            <p>
+                ゴア/トーンクラスター。
+            </p>
+            <p>
+                BMSをたくさん作るぜ'23参加作品、コロナなどで会社が無くなったり祖母が亡くなったりしていたのがようやく落ち着きBMS作成出来るようになりました。
+            </p>
+            <p>
+                ピアノの一定区間を一気に叩くトーンクラスターをメインに据えたBMSというものが思いのほか少なく、ガンガン叩かせるBMSを作りたいとはしばらく思っていたのですが絶好の機会であったBe Music in the Darkを忙しくて逃してしまう痛恨のミス。
+            </p>
+            <p>
+                アイデアが諦めきれなかったので再利用したのですが、高音のトーンクラスターに偏ってしまったので低音を活かしたのももう一度作りたいですね。
+            </p>
+            <p>
+                ホラーというには少し騒がしすぎる気がしますがスプラッターならこれくらい普通なのでしょうか、ホラーが苦手すぎてその辺の知識が全くございません。
+            </p>
+            <p>
+                曲は短くサラっと遊べるのでお気軽にどうぞ。あとBGAは明度を上げるとモンスターがこっそりいたりします、Be Music in the Darkだったら失格してますねこれ。
+            </p>
+        </div>
+
+        <div class="window__status-bar">
+            公開：2018/03/01
+        </div>
+    </div>
+</jw-modal>
+
+<!-- Modal 10 -->
+<jw-modal id="modal10">
+    <div class="modal">
+        <h1>Modal 10</h1>
+        <p>Home page text for Modal 10</p>
+        <button (click)="closeModal('modal10')">Close</button>
+    </div>
+</jw-modal>
