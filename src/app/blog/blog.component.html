@@ -1,1 +1,37 @@
-<p>blog works!</p>
+<div class="container">
+  <div class="blog">
+    <div
+      *ngFor="let d of data | paginate : { itemsPerPage: 5, currentPage: p }"
+    ><div class="date">{{ d.date }}</div>
+      <a a [routerLink]="['/blog']" [queryParams]="{ title: d.title }"
+        ><h3>{{ d.title }}</h3></a
+      >
+
+      <hr />
+      <p class="blogContent" [innerHTML]="d.content"></p>
+      <hr />
+      <p>
+        <ng-container *ngIf="isTagArray(d.tag)">
+          <span *ngFor="let tag of d.tag">
+            <a [routerLink]="['/blog']" [queryParams]="{ tag: tag }">{{
+              tag
+            }}</a>
+          </span>
+        </ng-container>
+        <ng-container *ngIf="!isTagArray(d.tag)">
+          {{ d.tag }}
+        </ng-container>
+      </p>
+    </div>
+    <div *ngIf="showPagination">
+      <pagination-controls (pageChange)="p = $event" class="float-center">
+      </pagination-controls>
+    </div>
+  </div>
+  <div class="sidebar">
+    <h4>カテゴリ</h4>
+    <hr />
+    <a [routerLink]="['/blog']" [queryParams]="{ tag: '閑話' }">閑話</a>
+    <a [routerLink]="['/blog']" [queryParams]="{ tag: 'BMS' }">BMS</a>
+  </div>
+</div>
