@@ -17,6 +17,16 @@
       <div class="item">
         <img
           class="jacket"
+          style="border: 4px solid rgb(238, 255, 0)"
+          src="/assets/Jackets/11.png"
+          (click)="openModal('modal11')"
+        />
+      </div>
+    </li>
+    <li style="list-style-type: none">
+      <div class="item">
+        <img
+          class="jacket"
           style="border: 4px solid rgb(51, 78, 33)"
           src="/assets/Jackets/10.png"
           (click)="openModal('modal10')"
@@ -676,9 +686,76 @@
 
 <!-- Modal 11 -->
 <jw-modal id="modal11">
+  <div class="window" tabindex="0">
+    <div class="window__title-bar">
+      <div class="window__title">Ymphomania</div>
+      <br />
+      <button class="window__btn" (click)="closeModal('modal11')">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="window__body">
+      <h1>Ymphomania</h1>
+      <a href="/assets/Song/Ymphomania.zip"
+        ><button
+          class="cybr-btn"
+          style="
+          --primary-hue: 200;
+          --primary-shadow-hue: 180;
+          --secondary-shadow-hue: 280;
+        "
+        >
+          <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+          <span class="cybr-btn__glitch"></span>
+        </button>
+      </a>
+      <img
+        class="jacket"
+        style="border: 4px solid rgb(238, 255, 0)"
+        src="/assets/Jackets/11.png"
+      />
+      <p>情報過多/欺瞞</p>
+      <p>
+        Morphpack参加作品、和洋折衷カルトコア。
+      </p>
+      <p>
+        基本は東南アジアの土着宗教を意識したガムラン的な楽器と音階をベースにシタールや和楽器、教会音楽で使う楽器を盛り込んだ上でなんか歌唱も乗ってます。
+      </p>
+      <p>
+        歌詞は基本的にこの世の宗教が全て教えてくれないことにウダウダ言いつつ全ての答えを教えてくれる新たな宗教へと勧誘する感じです。あとそれなりにおだててきます、勧誘なので。
+      </p>
+      <p>
+        キャラのお名前はフェイルール・フォルカロルくん。曲を投げたらもるふさんがめちゃくちゃ胡散臭い男を投げ返してきました、最高。スプリットタンで二枚舌を表現してるのは自分のリクエストです。
+      </p>
+      <p>
+        特にミックスの勉強をしたわけではないんだけどなんか前回の歌唱よりも圧倒的に歌が聞けるものになっててすごく良かった。メロも好きだし楽曲としては自作で一番好きかも。
+      </p>
+      <p>
+        大量の画像差分を送られてきたのでBGAは気合を入れてボカロ曲PVっぽくしました。サムネにもなってるクソ広告がかなりのお気に入り。あまりにも胡散臭い。
+      </p>
+      <p>
+        ちなみに音声加工にいわゆるAIボイチェンを使っておりこれでその辺の生成AI技術アンチの人に目を付けられないか日々戦々兢々しています。
+      </p>
+    </div>
+
+    <div class="window__status-bar">公開：2024/07/01</div>
+  </div>
+</jw-modal>
+
+<!-- Modal 12 -->
+<jw-modal id="modal12">
   <div class="modal">
     <h1>Modal 10</h1>
     <p>Home page text for Modal 11</p>
-    <button (click)="closeModal('modal11')">Close</button>
+    <button (click)="closeModal('modal12')">Close</button>
+  </div>
+</jw-modal>
+
+<!-- Modal 13 -->
+<jw-modal id="modal13">
+  <div class="modal">
+    <h1>Modal 10</h1>
+    <p>Home page text for Modal 11</p>
+    <button (click)="closeModal('modal13')">Close</button>
   </div>
 </jw-modal>
