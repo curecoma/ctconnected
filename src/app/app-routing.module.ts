@@ -10,14 +10,14 @@ import { ToolComponent } from './tool/tool.component';
 import { LinkComponent } from './link/link.component';
 
 const routes: Routes = [
-  { path: 'index', component: IndexComponent },
-  { path: 'bms', component: BmsComponent },
-  { path: 'sabun', component: SabunComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'pic', component: PicComponent },
-  { path: 'tool', component: ToolComponent },
-  { path: 'link', component: LinkComponent },
-  { path: '**', component: IndexComponent }
+  { path: 'index', component: IndexComponent, data: { title: 'Thus Exists' }},
+  { path: 'bms', component: BmsComponent, data: { title: 'Thus Exists' } },
+  { path: 'sabun', component: SabunComponent, data: { title: 'Thus Exists' } },
+  { path: 'blog', component: BlogComponent, data: { title: '暮狛閑話' } },
+  { path: 'pic', component: PicComponent, data: { title: 'Thus Exists' } },
+  { path: 'tool', component: ToolComponent, data: { title: 'Thus Exists' } },
+  { path: 'link', component: LinkComponent, data: { title: 'Thus Exists' } },
+  { path: '**', component: IndexComponent, data: { title: 'Thus Exists' } }
 ];
 
 @NgModule({

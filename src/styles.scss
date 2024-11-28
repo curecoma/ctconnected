@@ -1,25 +1,24 @@
 :root {
-    --default-padding: 10px;
-    --shimmy-distance: 5;
-    --primary-hue: 0;
-    --primary-lightness: 50;
-    --color: #fff;
-    --black: #0d0d0d;
-    --font-size: 26px;
-    --label-size: 9px;
-    --shadow-primary-hue: 180;
-    --shadow-secondary-hue: 60;
-    /* Parameters */
-    --color-first: #FF00FF;
-    --color-second: #00FFFF;
-    --color-third: #FFFF00;
-    --color-forth: #000000;
-    --block-width: 256px;
-    --block-height: 256px;
-    --border-width: 8px;
-    box-sizing: border-box;
+  --default-padding: 10px;
+  --shimmy-distance: 5;
+  --primary-hue: 0;
+  --primary-lightness: 50;
+  --color: #fff;
+  --black: #0d0d0d;
+  --font-size: 26px;
+  --label-size: 9px;
+  --shadow-primary-hue: 180;
+  --shadow-secondary-hue: 60;
+  /* Parameters */
+  --color-first: #ff00ff;
+  --color-second: #00ffff;
+  --color-third: #ffff00;
+  --color-forth: #000000;
+  --block-width: 256px;
+  --block-height: 256px;
+  --border-width: 8px;
+  box-sizing: border-box;
 }
-
 
 /*
 Rain.css
@@ -27,205 +26,201 @@ original: https://codepen.io/arickle/pen/XKjMZY
 */
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .rain {
-    pointer-events: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    transform: rotate(-5deg);
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: rotate(-5deg);
 }
 
 .rain.back-row {
-    display: none;
-    z-index: 9;
-    bottom: 60px;
-    opacity: 1;
+  display: none;
+  z-index: 9;
+  bottom: 60px;
+  opacity: 1;
 }
 
 .drop {
-    position: absolute;
-    bottom: 100%;
-    width: 15px;
-    height: 120px;
-    pointer-events: none;
-    animation: drop 0.5s linear infinite;
+  position: absolute;
+  bottom: 100%;
+  width: 15px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
 }
 
 @keyframes drop {
-    0% {
-        transform: translateY(0vh);
-    }
-    100% {
-        transform: translateY(150vh);
-    }
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(150vh);
+  }
 }
 
 .stem {
-    width: 1.5px;
-    height: 60%;
-    margin-left: 7px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
-    animation: stem 0.5s linear infinite;
+  width: 1.5px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.4)
+  );
+  animation: stem 0.5s linear infinite;
 }
 
 @keyframes stem {
-    0% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 0.4;
-    }
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
 }
-
 
 /*
 PageLayout.css
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@500&family=Zen+Antique&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@500&family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
 html {
-    height: 100%;
-    margin: auto;
-    overflow: scroll;
-    overflow-x: hidden;
+  height: 100%;
+  margin: auto;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 body {
-    background-image: url("/assets/BG/ForestBG.png");
-    background-size: 100%;
-    background-repeat: repeat;
-    background-position: 0% 35%;
-    font-family: 'Zen Antique', serif;
-    background-attachment: fixed;
+  background-image: url("/assets/BG/ForestBG.png");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: 0% 35%;
+  font-family: "Zen Antique", serif;
+  background-attachment: fixed;
 }
 
 h1 {
-    text-align: center;
-    text-shadow: #50ff9c6c 1px 1px 2px;
+  text-align: center;
+  text-shadow: #50ff9c6c 1px 1px 2px;
 }
 
 h3 {
-    margin: 4px;
-    font-size: 36px;
-    font-family: 'Zen Antique', serif;
+  margin: 4px;
+  font-size: 36px;
+  font-family: "Zen Antique", serif;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 14px;
+  list-style-type: none;
+  padding-left: 14px;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background-color: gray;
+  border: 0;
+  height: 1px;
+  background-color: gray;
 }
 
-.updates>hr {
-    max-width: 90%;
+.updates > hr {
+  max-width: 90%;
 }
 
-li>hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    background-color: rgba(128, 128, 128, 0);
+li > hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  background-color: rgba(128, 128, 128, 0);
 }
-
-.float {
-    float: right;
-}
-
 
 /* A link that has not been visited */
 
 a:link {
-    color: #c28194;
+  color: #c28194;
 }
-
 
 /* A link that has been visited */
 
 a:visited {
-    color: #404937;
+  color: #404937;
 }
-
 
 /* A link that is hovered on */
 
 a:hover {
-    color: red;
+  color: red;
 }
-
 
 /* A link that is selected */
 
 a:active {
-    color: blue;
+  color: blue;
 }
 
-
 /* ===== Scrollbar CSS ===== */
-
 
 /* Firefox */
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #80ff80 #008000;
+  scrollbar-width: thin;
+  scrollbar-color: #80ff80 #008000;
 }
-
 
 /* Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
+  height: 6px;
+  width: 6px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #008000;
+  background: #008000;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #80ff80;
-    border-radius: 10px;
-    border: 3px none #ffffff;
+  background-color: #80ff80;
+  border-radius: 10px;
+  border: 3px none #ffffff;
 }
-
 
 /*
 BasicLayout.css
 */
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .textContainer {
-    padding: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 1%;
-    overflow: auto;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 1%;
+  overflow: auto;
 }
 
 .container {
-    position: relative;
-    margin: auto;
-    margin-top: 82px;
-    size: 100%;
-    display: grid;
-    color: bisque;
-    justify-content: center;
-    grid-template-columns: minmax(600px, 1000px);
+  position: relative;
+  margin: auto;
+  margin-top: 82px;
+  size: 100%;
+  display: grid;
+  color: bisque;
+  justify-content: center;
+  grid-template-columns: minmax(600px, 1000px);
 }

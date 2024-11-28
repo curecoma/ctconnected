@@ -167,6 +167,14 @@ table {
     filter: saturate(0);
 }
 
+.darkColorless {
+  filter: invert(1) saturate(0);
+}
+
+.invert{
+  filter: invert(1);
+}
+
 @-webkit-keyframes o-rotate-360 {
     0% {
         transform: rotate(0);

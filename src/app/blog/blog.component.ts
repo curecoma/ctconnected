@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Router, ActivatedRoute, Params, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -16,7 +16,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
         <!-- Display your article content here -->
       </li>
     </ul>
-      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
   `,
 })
 export class BlogComponent {
@@ -27,9 +27,7 @@ export class BlogComponent {
     private route: ActivatedRoute
   ) {}
   ngOnInit() {
-    if (this.router.url.includes('title')) {
-      this.showPagination = false;
-    }
+    this.paginationChecker();
     this.route.queryParams.subscribe((params: Params) => {
       const tag = params['tag'];
       const urlTitle = params['title'];
@@ -41,6 +39,19 @@ export class BlogComponent {
         this.getData();
       }
     });
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.paginationChecker();
+      }
+    });
+  }
+
+  paginationChecker() {
+    if (this.router.url.includes('title')) {
+      this.showPagination = false;
+    } else {
+      this.showPagination = true;
+    }
   }
 
   isTagArray(tag: any): boolean {
