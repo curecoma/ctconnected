@@ -20,6 +20,7 @@ import { LoadingScreenComponent } from './loading-screen/loading-screen.componen
 import { LoadingInterceptor } from './loading.interceptor';
 import { ModalComponent } from './modal/modal.component';
 import { SabunComponent } from './sabun/sabun.component';
+import { DifftableComponent } from './difftable/difftable.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { SabunComponent } from './sabun/sabun.component';
     LinkComponent,
     ModalComponent,
     SabunComponent,
+    DifftableComponent,
   ],
   imports: [
     BrowserModule,

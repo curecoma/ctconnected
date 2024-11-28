@@ -17,6 +17,16 @@
       <div class="item">
         <img
           class="jacket"
+          style="border: 4px solid rgb(51, 78, 33)"
+          src="/assets/Jackets/10.png"
+          (click)="openModal('modal10')"
+        />
+      </div>
+    </li>
+    <li style="list-style-type: none">
+      <div class="item">
+        <img
+          class="jacket"
           style="border: 4px solid rgb(0, 0, 0)"
           src="/assets/Jackets/9.png"
           (click)="openModal('modal9')"
@@ -113,8 +123,7 @@
       <div class="window__title">量産型八咫烏</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal1')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -177,8 +186,7 @@
       <div class="window__title">Tb Plausible</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal2')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -233,8 +241,7 @@
       <div class="window__title">敵性夕立/鏡面海域</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal3')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -288,8 +295,7 @@
       <div class="window__title">【Freak《Show】Down》</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal4')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -348,8 +354,7 @@
         <div class="window__title">My Most Meddling Maker</div>
         <br />
         <button class="window__btn" (click)="closeModal('modal5')">
-          &times;
-          <span>Close</span>
+          <span>&times;</span>
         </button>
       </div>
 
@@ -400,8 +405,7 @@
       <div class="window__title">化科竜編楽</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal6')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -456,8 +460,7 @@
       <div class="window__title">Introverts from Outerspace</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal7')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -508,8 +511,7 @@
       <div class="window__title">Quadrupolar</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal8')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -568,8 +570,7 @@
       <div class="window__title">creeping tone clusters</div>
       <br />
       <button class="window__btn" (click)="closeModal('modal9')">
-        &times;
-        <span>Close</span>
+        <span>&times;</span>
       </button>
     </div>
 
@@ -613,15 +614,71 @@
       </p>
     </div>
 
-    <div class="window__status-bar">公開：2018/03/01</div>
+    <div class="window__status-bar">公開：2023/03/10</div>
   </div>
 </jw-modal>
 
+
 <!-- Modal 10 -->
 <jw-modal id="modal10">
+  <div class="window" tabindex="0">
+    <div class="window__title-bar">
+      <div class="window__title">GAZE BACK</div>
+      <br />
+      <button class="window__btn" (click)="closeModal('modal10')">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="window__body">
+      <h1>GAZE BACK</h1>
+      <a href="/assets/Song/GazeBack.zip"
+        ><button
+          class="cybr-btn"
+          style="
+          --primary-hue: 200;
+          --primary-shadow-hue: 180;
+          --secondary-shadow-hue: 280;
+        "
+        >
+          <span class="cybr-btn__text" data-text="DOWNLOAD">DOWNLOAD</span>
+          <span class="cybr-btn__glitch"></span>
+        </button>
+      </a>
+      <img
+        class="jacket"
+        style="border: 4px solid rgb(51, 78, 33)"
+        src="/assets/Jackets/10.png"
+      />
+      <p>ダークシンセ……<br>ダークシンセ？</p>
+      <p>
+        Genre Shuffle 4参加作品、運営サイドにいたので出ない択がありませんでした。
+      </p>
+      <p>
+        頂いたジャンルはDark Synth。イベント開始まで一度も聞いたことのないジャンルでしたが色々聞いた結果Carpenter Brutの楽曲、特にRoller Mobsterが気に入ったのでそれをリファレンスとして作成開始。
+      </p>
+      <p>
+        ただし音作りが下手すぎて要素自体はDark Synth的だったものの音作りがあまりにもPsyに寄ってしまいジャンル的にはあまりDark Synth出来てない結果に。
+      </p>
+      <p>
+        ジャンル定義がかなりかっちりしているおかげで楽曲自体は今までの自作楽曲の中でもっともまとも、MVも初の連番チャレンジにしては良い感じに仕上がったと思っている。
+      </p>
+      <p>
+        ただやっぱりジャンルとしては不満が残る結果になってしまったのでリベンジしたい、もっとSynthwaveの音作りのチュートリアルを見なければ。
+      </p>
+      <p>
+        別に誰もリベンジを待ってはいないと思うんですけど自分で納得いかないのが一番気に食わないんですよね。
+      </p>
+    </div>
+
+    <div class="window__status-bar">公開：2024/03/30</div>
+  </div>
+</jw-modal>
+
+<!-- Modal 11 -->
+<jw-modal id="modal11">
   <div class="modal">
     <h1>Modal 10</h1>
-    <p>Home page text for Modal 10</p>
-    <button (click)="closeModal('modal10')">Close</button>
+    <p>Home page text for Modal 11</p>
+    <button (click)="closeModal('modal11')">Close</button>
   </div>
 </jw-modal>

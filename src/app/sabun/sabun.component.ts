@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import * as $ from "jquery";
 
 @Component({
@@ -21,12 +22,9 @@ export class SabunComponent {
         });
     }
   }
-
-
 }
 
 function makeBMSTable(info: string | any[], mark: string) {
-    console.log("is called")
     var x = "";
     var ev = "";
     var count = 0;

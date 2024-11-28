@@ -98,7 +98,6 @@ html {
   height: 100%;
   margin: auto;
   overflow: scroll;
-  overflow-x: hidden;
 }
 
 body {
@@ -121,19 +120,10 @@ h3 {
   font-family: "Zen Antique", serif;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 14px;
-}
-
 hr {
   border: 0;
   height: 1px;
   background-color: gray;
-}
-
-.updates > hr {
-  max-width: 90%;
 }
 
 li > hr {
@@ -212,15 +202,4 @@ h3 {
   border-radius: 10px;
   margin: 1%;
   overflow: auto;
-}
-
-.container {
-  position: relative;
-  margin: auto;
-  margin-top: 82px;
-  size: 100%;
-  display: grid;
-  color: bisque;
-  justify-content: center;
-  grid-template-columns: minmax(600px, 1000px);
 }

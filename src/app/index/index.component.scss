@@ -6,14 +6,8 @@
 
 
 /* TopGrid.css */
-
-.center {
-  margin: auto;
-  margin-top: 90px;
-}
-
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .float {
@@ -29,21 +23,14 @@ h3 {
 }
 
 .Updates {
-    grid-area: main;
+    grid-area: sidebar;
     padding-left: 12px;
     padding-right: 12px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 8px;
-    max-height: 300px;
-    overflow: auto;
-}
-
-.Twitter {
-    grid-area: sidebar;
-    margin: 8px;
-    margin-left: 0;
-    max-height: 30%;
+    overflow-y: scroll;
+    max-height: 692px;
 }
 
 .Copyright {
@@ -53,21 +40,20 @@ h3 {
     border-radius: 10px;
     text-align: center;
     line-height: 40px;
+    max-height: 40px;
 }
 
 .container {
-    position: relative;
+    margin: auto;
     margin-top: 82px;
-    size: 100%;
     display: grid;
-    max-height: 1020px;
     grid-template-rows: auto auto 60px;
     grid-template-columns: minmax(600px, 1000px) 300px;
     column-gap: 1vh;
     row-gap: 1vh;
-    grid-template-areas: "header sidebar" "main sidebar" "footer sidebar";
+    grid-template-areas: "header sidebar" "footer sidebar";
     color: bisque;
-    justify-content: center;
+    justify-content: safe center;
 }
 
 @media (min-width: 1100px) {
@@ -82,6 +68,10 @@ h3 {
     border-radius: 10px;
 }
 
+ul {
+    padding-left: 14px;
+    list-style-type: none;
+}
 
 /* UpdateList.css */
 

@@ -8,6 +8,7 @@ import { BlogComponent } from './blog/blog.component';
 import { PicComponent } from './pic/pic.component';
 import { ToolComponent } from './tool/tool.component';
 import { LinkComponent } from './link/link.component';
+import { DifftableComponent } from './difftable/difftable.component';
 
 const routes: Routes = [
   { path: 'index', component: IndexComponent, data: { title: 'Thus Exists' }},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'pic', component: PicComponent, data: { title: 'Thus Exists' } },
   { path: 'tool', component: ToolComponent, data: { title: 'Thus Exists' } },
   { path: 'link', component: LinkComponent, data: { title: 'Thus Exists' } },
+  { path: 'difftable', component: DifftableComponent, data: { title: 'Thus Exists' } },
   { path: '**', component: IndexComponent, data: { title: 'Thus Exists' } }
 ];
 

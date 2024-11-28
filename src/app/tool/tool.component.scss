@@ -12,3 +12,13 @@ th {
     padding-top: 4px;
     padding-bottom: 4px;
 }
+
+.container {
+  margin: auto;
+  margin-top: 82px;
+  size: 100%;
+  display: grid;
+  color: bisque;
+  justify-content: safe center;
+  grid-template-columns: minmax(600px, 900px);
+}

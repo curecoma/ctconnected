@@ -1,5 +1,6 @@
 [{
     "bms": [
+        { "title": "GAZE BACK", "url": "/assets/Song/GazeBack.zip" },
         { "title": "creeping tone clusters", "url": "/assets/Song/CreepingToneClusters.zip" },
         { "title": "Quadrupolar", "url": "/assets/Song/Quadrupolar.zip" },
         { "title": "Introverts from Outerspace", "url": "/assets/Song/IntrovertsFromOuterspace.zip" },
