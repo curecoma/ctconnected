@@ -42,5 +42,5 @@ testem.log
 Thumbs.db
 
 # Ignore all files under Sabun and Song
-src/app/assets/Sabun/*
-src/app/assets/Song/*
+src/assets/Sabun/*
+src/assets/Song/*

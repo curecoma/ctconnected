@@ -54,7 +54,7 @@ function makeBMSTable(info: string | any[], mark: string) {
   var obj = $("#table_int2");
   // Clear the table
   obj.html("");
-  $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>曲名</td><td align='center'>差分DL</td><td align='center'>本体</td><td align='center'>オススメ度</td><td align='center'>コメント</td></tr>").appendTo(obj);
+  $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>曲名</td><td align='center'>差分DL</td><td align='center'>本体</td></tr>").appendTo(obj);
   var obj_sep = null;
   for (var i = 0; i < info.length; i++) {
     // Main content
@@ -77,13 +77,6 @@ function makeBMSTable(info: string | any[], mark: string) {
     // Main URL
     $("<td style='background-color: #000000ee; z-index: 11;' width='20%'>" + "<a href='" + info[i].url_orig + "'>" + info[i].artist + "</a>" + "</td>").appendTo(str);
 
-    // Recommendation
-    $("<td style='background-color: #000000ee; z-index: 11;' width='5%' align='center'>" + info[i].recommend + "</td>").appendTo(str);
-    str.appendTo(obj);
-    count++;
-
-    // Comment
-    $("<td style='background-color: #000000ee; z-index: 11;' width='15%'>" + info[i].comment + "</td>").appendTo(str);
     str.appendTo(obj);
     count++;
   }
