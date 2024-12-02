@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import * as $ from "jquery";
 
 @Component({
@@ -8,30 +9,18 @@ import * as $ from "jquery";
 })
 export class DifftableComponent implements OnInit, OnDestroy {
   private headElement: HTMLMetaElement | null = null;
+  constructor(private meta: Meta) {}
 
   ngOnInit() {
-    this.addHead();
     this.initialize();
   }
 
   ngOnDestroy(): void {
-    this.removeHead();
+    this.removeMetaTag();
   }
 
-  private addHead(): void {
-    if (!this.headElement) {
-      this.headElement = document.createElement('meta');
-      this.headElement.name = 'bmstable';
-      this.headElement.content = '/assets/JSON/header2.json';
-      document.head.appendChild(this.headElement);
-    }
-  }
-
-  private removeHead(): void {
-    if (this.headElement && document.head.contains(this.headElement)) {
-      document.head.removeChild(this.headElement);
-      this.headElement = null;
-    }
+  private removeMetaTag(): void {
+    this.meta.removeTag("name='bmstable'");
   }
 
   initialize() {

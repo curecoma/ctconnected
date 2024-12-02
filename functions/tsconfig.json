@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "esnext"],
+    "module": "commonjs",
+    "outDir": "lib",
+    "rootDir": "src",
+    "target": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules/@types/jquery",
+    "node_modules/@types/sizzle"
+  ]
+}
+
