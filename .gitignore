@@ -1,46 +1,97 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+################################################
+# Node / Angular artefacts
+################################################
+# Dependency cache
+node_modules/
+# Angular & TypeScript build output
+dist/
+.angular/
+out-tsc/
+.tmp/
+# Tests & coverage
+coverage/
+.nyc_output/
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
+################################################
+# Editor / IDE settings
+################################################
+.vscode/
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+*.code-workspace
+*.sw?
+*.suo
+*.iml
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
+################################################
+# OS‑generated junk
+################################################
 .DS_Store
 Thumbs.db
+desktop.ini
+ehthumbs.db
 
-# Ignore all files under Sabun and Song
-src/assets/Sabun/*
-src/assets/Song/*
+################################################
+# Logs
+################################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+report.*.json
+
+################################################
+# Environment & secrets
+################################################
+.env*
+*.pem
+*.key
+
+################################################
+# Heavy design assets — **keep these local**
+################################################
+# Clip Studio files
+*.clip
+# VRoid Studio models
+*.vroid
+# Random utility ZIPs you bundled under assets/Tools
+src/assets/Tools/*.zip
+# Any other archives
+*.7z
+*.rar
+*.zip
+
+################################################
+# Optional media you decide not to version
+################################################
+# (Uncomment if you prefer to keep raw images elsewhere)
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+
+################################################
+# Fonts (optional—comment out if you want them tracked)
+################################################
+# *.otf
+# *.ttf
+# *.woff*
+# src/assets/Fonts/
+
+################################################
+# Future PHP backend (Composer)
+################################################
+vendor/
+composer.lock
+
+################################################
+# Misc build caches / maps
+################################################
+*.js.map
+*.d.ts
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_*/
+.cache/
+.parcel-cache
