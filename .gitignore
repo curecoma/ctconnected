@@ -48,35 +48,29 @@ report.*.json
 *.key
 
 ################################################
-# Heavy design assets — **keep these local**
+# Heavy design assets
 ################################################
 # Clip Studio files
 *.clip
-# VRoid Studio models
-*.vroid
-# Random utility ZIPs you bundled under assets/Tools
-src/assets/Tools/*.zip
-# Any other archives
 *.7z
 *.rar
 *.zip
 
 ################################################
-# Optional media you decide not to version
+# Media
 ################################################
-# (Uncomment if you prefer to keep raw images elsewhere)
-# *.png
-# *.jpg
-# *.jpeg
-# *.gif
+*.png
+*.jpg
+*.jpeg
+*.gif
 
 ################################################
-# Fonts (optional—comment out if you want them tracked)
+# Fonts
 ################################################
-# *.otf
-# *.ttf
-# *.woff*
-# src/assets/Fonts/
+*.otf
+*.ttf
+*.woff*
+src/assets/Fonts/
 
 ################################################
 # Future PHP backend (Composer)
