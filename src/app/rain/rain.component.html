@@ -1,2 +1,27 @@
-<div class="rain front-row"></div>
-<div class="rain back-row"></div>
+<div class="rain-layer">
+  <div
+    class="drop front"
+    *ngFor="let d of front"
+    [ngStyle]="{
+      'left.%'            : d.left,
+      'bottom.%'          : d.bottom,
+      'animation-delay.s' : d.delay,
+      'animation-duration.s' : d.speed
+    }">
+    <div class="stem"></div>
+    <div class="splat"></div>
+  </div>
+
+  <div
+    class="drop back"
+    *ngFor="let d of back"
+    [ngStyle]="{
+      'left.%'            : d.left,
+      'bottom.%'          : d.bottom,
+      'animation-delay.s' : d.delay,
+      'animation-duration.s' : d.speed * 1.3
+    }">
+    <div class="stem"></div>
+    <div class="splat"></div>
+  </div>
+</div>

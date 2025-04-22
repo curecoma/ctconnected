@@ -1,0 +1,72 @@
+/* ================================================= */
+/*  Rain layer                                       */
+/* ================================================= */
+.rain-layer {
+  position: fixed;
+  top: 0;
+  left: -4vw;         /* overscan so tilted drops start off‑screen */
+  width: 108vw;       /* 100 + 2×4vw                                */
+  height: 100vh;
+  transform: rotate(-5deg);
+  pointer-events: none;
+  overflow: visible;  /* let stems extend past the edges            */
+}
+
+/* ================================================= */
+/*  Drops                                            */
+/* ================================================= */
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 15px;        /* container width – stem sits inside */
+  height: 120px;
+  pointer-events: none;
+}
+
+/* STEM (falling line) */
+.stem {
+  position: absolute;
+  left: 7px;
+  width: 1px;         /* thinner, matches legacy */
+  height: 60%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0)    0%,
+    rgba(255, 255, 255, 0.1) 80%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  animation: fall linear infinite;
+}
+
+/* SPLAT */
+.splat {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 12px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 0;
+  transform: scale(0);
+  animation: splat ease-out infinite;
+  animation-delay: inherit;       /* sync with parent drop */
+  animation-duration: inherit;
+}
+
+/* Back layer slightly dimmer for depth */
+.drop.back .stem,
+.drop.back .splat {
+  opacity: 0.35;
+}
+
+/* ===================== Animations ===================== */
+@keyframes fall {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(170vh); }   /* farther so bottom‑right clears */
+}
+
+@keyframes splat {
+  90%  { opacity: 0;   transform: scale(0); }
+  100% { opacity: 1;   transform: scale(1); }
+}
